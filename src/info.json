@@ -1,0 +1,125 @@
+{
+    "identifier": "com.acgso.bob-plugin-fishaudio-tts",
+    "version": "0.1.0",
+    "category": "tts",
+    "name": "FishAudio TTS服务",
+    "summary": "FishAudio TTS SDK 服务",
+    "icon": "logo.png",
+    "author": "ipfans",
+    "homepage": "https://github.com/ipfans/bob-plugin-fishaudio-tts",
+    "minBobVersion": "0.5.0",
+    "options": [
+        {
+            "identifier": "desc",
+            "type": "menu",
+            "title": "描述",
+            "defaultValue": "Speech Service",
+            "menuValues": [
+                {
+                    "title": "FishAudio TTS服务",
+                    "value": "Speech Service"
+                }
+            ],
+            "desc": "FishAudio TTS服务"
+        },
+        {
+            "identifier": "apiKey",
+            "type": "text",
+            "title": "API KEY",
+            "defaultValue": "",
+            "desc": "请勿共享密钥。安全地存储这些密钥"
+        },
+        {
+            "identifier": "cacheDataNum",
+            "type": "menu",
+            "title": "缓存数量",
+            "defaultValue": "10",
+            "menuValues": [
+                {
+                    "title": "10",
+                    "value": "10"
+                },
+                {
+                    "title": "50",
+                    "value": "50"
+                },
+                {
+                    "title": "100",
+                    "value": "100"
+                }
+            ],
+            "desc": "缓存音频的数量，超出会删除历史缓存"
+        },
+        {
+            "identifier": "zh-CN-speaker",
+            "type": "menu",
+            "title": "中文语音",
+            "defaultValue": "7f92f8afb8ec43bf81429cc1c9199cb1",
+            "menuValues": [
+                {
+                    "title": "AD学姐（女）",
+                    "value": "7f92f8afb8ec43bf81429cc1c9199cb1"
+                },
+                {
+                    "title": "播音腔（男）",
+                    "value": "59cb5986671546eaa6ca8ae6f29f6d22"
+                },
+                {
+                    "title": "播音腔（女）",
+                    "value": "188fedbaa43e40508a8fefdaddac66c6"
+                }
+            ],
+            "desc": "切换中文语音角色"
+        },
+        {
+            "identifier": "en-US-speaker",
+            "type": "menu",
+            "title": "英语语音",
+            "defaultValue": "0fb74894823f483c9b2f27cabaad841d",
+            "menuValues": [
+                {
+                    "title": "Alex (Man)",
+                    "value": "51d2b8d9b14a49e3bec3dbad22c7b0b9"
+                },
+                {
+                    "title": "POTUS 45/47 (Man)",
+                    "value": "e58b0d7efca34eb38d5c4985e378abcb"
+                },
+                {
+                    "title": "Sebastian (Woman)",
+                    "value": "0fb74894823f483c9b2f27cabaad841d"
+                },
+                {
+                    "title": "Lucy (Woman)",
+                    "value": "061b60f8c73a4292ad073d855ad98ff5"
+                }
+            ],
+            "desc": "切换英语语音角色"
+        },
+        {
+            "identifier": "ja-JP-speaker",
+            "type": "menu",
+            "title": "日语语音",
+            "defaultValue": "65ea3e5533bd4d42bec42fc778f8d9f5",
+            "menuValues": [
+                {
+                    "title": "あおやぎ（女）",
+                    "value": "65ea3e5533bd4d42bec42fc778f8d9f5"
+                },
+                {
+                    "title": "オリジナル（男）",
+                    "value": "9c2994945d564fc79a810f86c405ef74"
+                },
+                {
+                    "title": "まな（女）",
+                    "value": "fbea303b64374bffb8843569404b095e"
+                },
+                {
+                    "title": "コナン（男）",
+                    "value": "627b81dbb547461ba099a31ec13a8bb7"
+                }
+            ],
+            "desc": "切换日语语音角色"
+        }
+    ]
+}
