@@ -1,0 +1,12 @@
+{
+  "identifier": "com.acgso.bob-plugin-fishaudio-tts",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "desc": "Init code",
+      "sha256": "ff90762a5db2b591f1fa344614127455720b2e61837b50aec66ef50b07557601",
+      "url": "https://github.com/ipfans/bob-plugin-fishaudio-tts/releases/download/v0.1.0/bob-plugin-fishaudio-tts_v0.1.0.bobplugin",
+      "minBobVersion": "0.5.0"
+    }
+  ]
+}
