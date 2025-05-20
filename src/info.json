@@ -1,6 +1,6 @@
 {
     "identifier": "com.acgso.bob-plugin-fishaudio-tts",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "category": "tts",
     "name": "FishAudio TTS服务",
     "summary": "FishAudio TTS SDK 服务",
@@ -120,6 +120,40 @@
                 }
             ],
             "desc": "切换日语语音角色"
+        },
+        {
+            "identifier": "apiEndpoint",
+            "type": "menu",
+            "title": "API Endpoint",
+            "defaultValue": "https://api.fish.audio",
+            "menuValues": [
+                {
+                    "title": "FishAudio 新（推荐）",
+                    "value": "https://api.fish.audio"
+                },
+                {
+                    "title": "FishAudio 旧",
+                    "value": "https://api.fish-audio.cn"
+                }
+            ],
+            "desc": "切换后端 API 地址"
+        },
+        {
+            "identifier": "model",
+            "type": "menu",
+            "title": "模型选择",
+            "defaultValue": "speech-1.6",
+            "menuValues": [
+                {
+                    "title": "speech-1.5",
+                    "value": "speech-1.5"
+                },
+                {
+                    "title": "speech-1.6",
+                    "value": "speech-1.6"
+                }
+            ],
+            "desc": "选择语音合成模型"
         }
     ]
 }

@@ -29,7 +29,9 @@ function tts(query, completion) {
   const text = query.text;
   const secretKey = $option['apiKey'];
   const cacheDataNum = $option['cacheDataNum'];
-  const audioKey = CryptoJS.MD5(speaker + text).toString();
+  const model = $option['model'] || 'speech-1.6';
+  const apiEndpoint = $option['apiEndpoint'] || 'https://api.fish.audio';
+  const audioKey = CryptoJS.MD5(speaker + text + model).toString();
   const audioPath = '$sandbox/' + audioKey;
 
   let audioData = '';
@@ -50,7 +52,7 @@ function tts(query, completion) {
   // 调用 API 获取音频
   $http.request({
     method: "POST",
-    url: "https://api.fish-audio.cn/v1/tts",
+    url: apiEndpoint + "/v1/tts",
     header: {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${secretKey}`
@@ -58,7 +60,8 @@ function tts(query, completion) {
     body: {
       text,
       reference_id: speaker,
-      mp3_bitrate: 128
+      mp3_bitrate: 128,
+      model: model
     }
   }).then(function (resp) {
     audioData = $data.fromData(resp.data).toBase64();
