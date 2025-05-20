@@ -2,6 +2,13 @@
   "identifier": "com.acgso.bob-plugin-fishaudio-tts",
   "versions": [
     {
+      "version": "0.2.0",
+      "desc": "feat: update version and add new configuration options for API endpoint and model selection",
+      "sha256": "0d512b6e337b70f1a630487900bf3881643cc6b6e3e581b8db6f37cfeedb4031",
+      "url": "https://github.com/ipfans/bob-plugin-fishaudio-tts/releases/download/v0.2.0/bob-plugin-fishaudio-tts_v0.2.0.bobplugin",
+      "minBobVersion": "0.5.0"
+    },
+    {
       "version": "0.1.0",
       "desc": "Init code",
       "sha256": "ff90762a5db2b591f1fa344614127455720b2e61837b50aec66ef50b07557601",
